@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.soundmag'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+ext{
+    junit5Ver = "5.8.2"
+}
+
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junit5Ver", "com.codeborne:selenide:6.3.5")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junit5Ver")
+}
+
+test {
+    useJUnitPlatform()
+}
