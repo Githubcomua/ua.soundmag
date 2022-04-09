@@ -18,6 +18,7 @@ public class SearchTests {
         $(".qsr-form").$(".qsr-submit").click();
         $(".br-static").$(".add.br-bbb-f").click();
         $(By.xpath("//*[@id=\"checkout-modal-popup\"]/div/div[1]/div/div[1]/p/span/button")).click();
+        $(By.xpath("//*[@id=\"cart_list\"]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/center/div/button[1]")).click();
 
        Selenide.sleep(4000);
 
